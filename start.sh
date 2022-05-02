@@ -7,4 +7,4 @@ if ! grep -q "eula=true" eula.txt; then
         echo
     fi
 fi
-java -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -Xmx12G -Xms12G -jar ${FORGE_JAR} nogui
+java -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -Xmx12G -Xms12G -jar forge-1.7.10-10.13.4.1614-1.7.10-universal.jar nogui

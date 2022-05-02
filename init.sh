@@ -3,9 +3,9 @@
 CONTAINER_ALREADY_STARTED="/minecraft/eula.txt"
 cd /minecraft
 if [ ! -e $CONTAINER_ALREADY_STARTED ]; then
-  java -jar ${FORGE_INSTALLER} --installServer
-  java -jar ${FORGE_JAR}
-  echo eula=true > $CONTAINER_ALREADY_STARTED
+  java -jar /install/forge-1.7.10-10.13.4.1614-1.7.10-installer.jar --installServer
+  java -jar forge-1.7.10-10.13.4.1614-1.7.10-universal.jar
+  echo eula=true > /minecraft/eula.txt
   cp /install/start.sh ./start.sh
   chmod u+x start.sh
 
